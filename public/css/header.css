@@ -1,0 +1,68 @@
+header .logo {
+    background-image: url('/img/logo.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 1px var(--colorGrisClaro);
+    height: 180px;
+    margin: 15px auto 30px;
+    width: 180px;
+}
+
+header {
+    width: 100%;
+}
+
+header button {
+    width: 50px;
+    padding: 5px;
+    font-size: 32px;
+    background-color: var(--gris);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0px auto 30px;
+    display: block;
+
+
+}
+
+header nav ul li {
+    background-color: var(--gris);
+    width: 100%;
+    padding: 10px 0;
+    border: solid white 2px;
+    text-transform: uppercase;
+    text-align: center;
+
+
+}
+
+
+
+@media (min-width: 460px) {
+    header nav ul {
+        overflow: hidden;
+    }
+
+    header nav ul li {
+        width: 15.5%;
+        font-size: 0.6rem;
+        float: left;
+        margin-right: 1.4%;
+    }
+
+    header nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    header button {
+        display: none;
+    }
+
+}
+@media(min-width:768px){
+    header nav ul li {
+        font-size: 0.9rem;
+    }
+}
